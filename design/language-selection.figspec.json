@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 0,
+  "name": "HBIMS Language Selection",
+  "lastModified": "2024-05-01T00:00:00Z",
+  "thumbnailUrl": "",
+  "version": "1.0",
+  "document": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:1",
+        "name": "Language Selection",
+        "type": "FRAME",
+        "blendMode": "PASS_THROUGH",
+        "children": [
+          {
+            "id": "2:0",
+            "name": "Background",
+            "type": "RECTANGLE",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 1080, "height": 1920 },
+            "fills": [
+              { "type": "SOLID", "color": { "r": 0.0588, "g": 0.1137, "b": 0.2902 } }
+            ],
+            "strokes": [],
+            "strokeWeight": 0,
+            "cornerRadius": 0
+          },
+          {
+            "id": "2:1",
+            "name": "Header",
+            "type": "FRAME",
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER",
+            "paddingLeft": 80,
+            "paddingRight": 80,
+            "paddingTop": 100,
+            "paddingBottom": 60,
+            "itemSpacing": 16,
+            "fills": [
+              { "type": "SOLID", "color": { "r": 0.0667, "g": 0.1765, "b": 0.3804 } }
+            ],
+            "cornerRadius": 0,
+            "children": [
+              {
+                "id": "3:0",
+                "name": "Greeting",
+                "type": "TEXT",
+                "characters": "Hello Rahul\nwelcome to HUMBLE BEE",
+                "style": {
+                  "fontFamily": "Poppins",
+                  "fontPostScriptName": "Poppins-Bold",
+                  "fontWeight": 700,
+                  "fontSize": 72,
+                  "lineHeightPx": 84,
+                  "letterSpacing": 0,
+                  "fills": [
+                    { "type": "SOLID", "color": { "r": 0.992, "g": 0.8078, "b": 0.0 } }
+                  ],
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP"
+                }
+              },
+              {
+                "id": "3:1",
+                "name": "Tagline",
+                "type": "TEXT",
+                "characters": "What We Commit, We Do",
+                "style": {
+                  "fontFamily": "Poppins",
+                  "fontPostScriptName": "Poppins-Regular",
+                  "fontWeight": 400,
+                  "fontSize": 36,
+                  "lineHeightPx": 48,
+                  "fills": [
+                    { "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1 } }
+                  ],
+                  "textAlignHorizontal": "CENTER"
+                }
+              },
+              {
+                "id": "3:2",
+                "name": "Subheadline",
+                "type": "TEXT",
+                "characters": "Choose your language",
+                "style": {
+                  "fontFamily": "Poppins",
+                  "fontPostScriptName": "Poppins-Medium",
+                  "fontWeight": 500,
+                  "fontSize": 40,
+                  "lineHeightPx": 52,
+                  "fills": [
+                    { "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1 } }
+                  ],
+                  "textAlignHorizontal": "CENTER"
+                }
+              }
+            ],
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 1080, "height": 480 }
+          },
+          {
+            "id": "2:2",
+            "name": "Language Grid",
+            "type": "FRAME",
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER",
+            "paddingLeft": 80,
+            "paddingRight": 80,
+            "paddingTop": 80,
+            "paddingBottom": 80,
+            "itemSpacing": 48,
+            "absoluteBoundingBox": { "x": 0, "y": 480, "width": 1080, "height": 1240 },
+            "fills": [],
+            "strokes": [],
+            "children": [
+              {
+                "id": "4:0",
+                "name": "Row 1",
+                "type": "FRAME",
+                "layoutMode": "HORIZONTAL",
+                "primaryAxisSizingMode": "AUTO",
+                "counterAxisSizingMode": "AUTO",
+                "itemSpacing": 32,
+                "children": [
+                  { "id": "5:0", "name": "Hindi", "type": "COMPONENT", "componentId": "10:0" },
+                  { "id": "5:1", "name": "Tamil", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Tamil", "nativeLabel": "தமிழ்", "icon": "🇮🇳" } },
+                  { "id": "5:2", "name": "Telugu", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Telugu", "nativeLabel": "తెలుగు", "icon": "🇮🇳" } }
+                ]
+              },
+              {
+                "id": "4:1",
+                "name": "Row 2",
+                "type": "FRAME",
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 32,
+                "children": [
+                  { "id": "5:3", "name": "Gujarati", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Gujarati", "nativeLabel": "ગુજરાતી", "icon": "🇮🇳" } },
+                  { "id": "5:4", "name": "Malayalam", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Malayalam", "nativeLabel": "മലയാളം.", "icon": "🇮🇳" } },
+                  { "id": "5:5", "name": "Marathi", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Marathi", "nativeLabel": "मराठी", "icon": "🇮🇳" } }
+                ]
+              },
+              {
+                "id": "4:2",
+                "name": "Row 3",
+                "type": "FRAME",
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 32,
+                "children": [
+                  { "id": "5:6", "name": "Kannada", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Kannada", "nativeLabel": "ಕನ್ನಡ", "icon": "🇮🇳" } },
+                  { "id": "5:7", "name": "Bengali", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Bengali", "nativeLabel": "বাংলা", "icon": "🇮🇳" } },
+                  { "id": "5:8", "name": "Punjabi", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "Punjabi", "nativeLabel": "ਪੰਜਾਬੀ", "icon": "🇮🇳" } }
+                ]
+              },
+              {
+                "id": "4:3",
+                "name": "Row 4",
+                "type": "FRAME",
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 32,
+                "children": [
+                  { "id": "5:9", "name": "English", "type": "INSTANCE", "componentId": "10:0", "overrides": { "languageLabel": "English", "nativeLabel": "English", "icon": "🇬🇧" } }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2:3",
+            "name": "Continue Button",
+            "type": "FRAME",
+            "absoluteBoundingBox": { "x": 280, "y": 1700, "width": 520, "height": 120 },
+            "cornerRadius": 24,
+            "fills": [
+              { "type": "SOLID", "color": { "r": 0.992, "g": 0.8078, "b": 0.0 } }
+            ],
+            "children": [
+              {
+                "id": "3:3",
+                "name": "Continue Label",
+                "type": "TEXT",
+                "characters": "Continue",
+                "style": {
+                  "fontFamily": "Poppins",
+                  "fontWeight": 600,
+                  "fontSize": 48,
+                  "fills": [
+                    { "type": "SOLID", "color": { "r": 0.0667, "g": 0.1765, "b": 0.3804 } }
+                  ],
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "CENTER"
+                }
+              }
+            ]
+          }
+        ],
+        "absoluteBoundingBox": { "x": 0, "y": 0, "width": 1080, "height": 1920 },
+        "fills": [
+          { "type": "SOLID", "color": { "r": 0.0667, "g": 0.1765, "b": 0.3804 } }
+        ],
+        "strokes": [],
+        "clipsContent": false
+      }
+    ]
+  },
+  "components": {
+    "10:0": {
+      "id": "10:0",
+      "name": "Language Tile",
+      "description": "Reusable tile for each language option",
+      "componentSetId": null,
+      "key": "language-tile",
+      "remote": false
+    }
+  },
+  "componentSets": {},
+  "styles": {
+    "heading": {
+      "key": "heading-style",
+      "name": "Heading/H1",
+      "styleType": "TEXT",
+      "description": "Large heading used for greetings"
+    },
+    "button": {
+      "key": "button-fill",
+      "name": "Button/Primary",
+      "styleType": "FILL",
+      "description": "Primary accent color"
+    }
+  }
+}
