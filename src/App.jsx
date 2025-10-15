@@ -1,62 +1,54 @@
-import { useState } from 'react';
-import { languages } from './languages.js';
+import './styles.css';
 
-const LanguageSelectorButton = ({ language, isActive, onSelect }) => (
-  <button
-    type="button"
-    className={`language-button ${isActive ? 'language-button--active' : ''}`}
-    onClick={() => onSelect(language.id)}
-  >
-    <span className="language-button__icon" aria-hidden="true">
-      {language.icon}
-    </span>
-    <span className="language-button__texts">
-      <span className="language-button__name">{language.name}</span>
-      {language.nativeName && (
-        <span className="language-button__native">{language.nativeName}</span>
-      )}
-    </span>
-  </button>
-);
-
-const LanguageSelector = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
-
-  return (
-    <div className="language-card" role="form" aria-labelledby="language-heading">
-      <header className="language-card__header">
-        <h1 id="language-heading">Choose Your Language</h1>
-        <p>Select your preferred reading language to continue.</p>
-      </header>
-
-      <div className="language-grid" role="list">
-        {languages.map((language) => (
-          <LanguageSelectorButton
-            key={language.id}
-            language={language}
-            isActive={selectedLanguage === language.id}
-            onSelect={setSelectedLanguage}
-          />
-        ))}
-      </div>
-
-      <button type="submit" className="continue-button">
-        Continue
-      </button>
-
-      <footer className="language-card__footer">
-        <p>
-          Empowering Every Student—
-          <span className="language-card__highlight"> In Every Language</span>
-        </p>
-      </footer>
-    </div>
-  );
-};
+const HERO_IMAGE_URL =
+  'https://images.unsplash.com/photo-1601703604922-0b7ba8dc0f7e?auto=format&fit=crop&w=1600&q=80';
 
 const App = () => (
   <div className="app">
-    <LanguageSelector />
+    <header className="hero" aria-label="Merchant Navy cadets aboard a vessel with the Indian flag">
+      <div
+        className="hero__image"
+        role="presentation"
+        style={{ backgroundImage: `url(${HERO_IMAGE_URL})` }}
+      />
+      <div className="hero__crest" aria-hidden="true">
+        <span className="hero__crest-icon">⚓</span>
+      </div>
+    </header>
+
+    <main className="card" role="main">
+      <h1 className="card__title">Welcome to HBIMS</h1>
+      <p className="card__subtitle">Start Your Merchant Navy Journey with Us</p>
+
+      <form className="card__form">
+        <label className="card__label" htmlFor="mobile">
+          Mobile Number
+        </label>
+        <div className="input-field">
+          <span className="input-field__icon" aria-hidden="true">
+            📱
+          </span>
+          <input
+            id="mobile"
+            name="mobile"
+            type="tel"
+            inputMode="tel"
+            placeholder="Mobile Number"
+            autoComplete="tel"
+          />
+        </div>
+        <button type="submit" className="primary-button">
+          Login &amp; Continue Your Journey
+        </button>
+      </form>
+
+      <p className="card__footer">
+        New to HBIMS?{' '}
+        <a href="#" className="card__link">
+          Register &amp; Start Your Journey
+        </a>
+      </p>
+    </main>
   </div>
 );
 

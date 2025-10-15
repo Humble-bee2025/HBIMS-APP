@@ -1,6 +1,9 @@
-# HBIMS Language Selector UI
+# HBIMS Onboarding UI
 
-This project contains a ready-to-use React implementation of the "Choose Your Language" screen shown in the design reference. It is powered by [Vite](https://vitejs.dev/) and uses modern React (v18) with functional components.
+This project contains a ready-to-use React implementation of the HBIMS welcome screen,
+including the hero imagery, credential input, and calls-to-action from the provided
+design reference. It is powered by [Vite](https://vitejs.dev/) and uses modern React
+(v18) with functional components and modular styling.
 
 ## Getting Started
 
@@ -38,7 +41,6 @@ HBIMS-APP/
 ├── package.json
 ├── src/
 │   ├── App.jsx
-│   ├── languages.js
 │   ├── main.jsx
 │   └── styles.css
 └── vite.config.js
@@ -46,9 +48,11 @@ HBIMS-APP/
 
 ## Customisation Tips
 
-- Edit `src/languages.js` to change or reorder the available languages.
-- Tweak the look and feel in `src/styles.css` to match your brand colours or typography.
-- Use the `LanguageSelector` component from `src/App.jsx` in any other React project by copying the component files and associated styles.
+- Update the hero art by changing the `HERO_IMAGE_URL` constant in `src/App.jsx`.
+- Adjust typography, spacing, or colour palette inside `src/styles.css` to match your
+  brand system.
+- The form currently captures a mobile number but does not submit; wire it to your
+  authentication flow as needed.
 
 ## License
 
